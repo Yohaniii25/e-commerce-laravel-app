@@ -1,7 +1,6 @@
+<div class="container" style="clear:both">
+  <footer class="py-3 my-4">
 
-<div class="container clear:both">
-  <footer class="py-3 my-4"><br>
-    <hr>
     <ul class="navbar">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>

@@ -21,33 +21,39 @@
     {{View::make('footer')}}
 
     <style>
-        .custom-login{
-            height:500px;
-            padding-top:100px;
+        .custom-login {
+            height: 500px;
+            padding-top: 100px;
         }
-        .slider-img{
-            height:400px !important;
+
+        img.slider-img {
+            height: 400px !important;
             /* width:400px !important; */
         }
-        .custom-product{
-            height:600px;
+
+        .custom-product {
+            height: 600px;
         }
-        .slider-text{
-           color:#3f2e42;
+
+        .slider-text {
+            color: #3f2e42;
         }
-        .trending-img{
-            height:100px;
+
+        .trending-img {
+            height: 100px;
         }
-        .trending-itm{
-            float:left;
-            width:20%;
+
+        .trending-itm {
+            float: left;
+            width: 20%;
         }
-        .trending-wrapper{
-            margin:30px;
+
+        .trending-wrapper {
+            margin: 30px;
         }
-        .navbar{
-            text-align:center;
-            text-decoration:none;
+
+        .detail-img {
+            height: 200px;
         }
     </style>
 </body>
