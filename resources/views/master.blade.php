@@ -53,7 +53,7 @@
         }
 
         .detail-img {
-            height: 200px;
+            height: 400px;
         }
     </style>
 </body>

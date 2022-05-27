@@ -10,13 +10,13 @@ class ProductController extends Controller
 {
     function index()
     {
-        $data= Product::all();
+        $data = Product::all();
 
-        return view('product',['products'=>$data]);
+        return view('product', ['products' => $data]);
     }
     function detail($id)
     {
-        $data=Product::find($id);
-        return view('detail',['product'=>$data]);
+        $data = Product::find($id);
+        return view('detail', ['product' => $data]);
     }
 }
