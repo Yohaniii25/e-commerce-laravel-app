@@ -35,6 +35,20 @@
         .slider-text{
            color:#3f2e42;
         }
+        .trending-img{
+            height:100px;
+        }
+        .trending-itm{
+            float:left;
+            width:20%;
+        }
+        .trending-wrapper{
+            margin:30px;
+        }
+        .navbar{
+            text-align:center;
+            text-decoration:none;
+        }
     </style>
 </body>
 

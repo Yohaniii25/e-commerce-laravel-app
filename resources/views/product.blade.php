@@ -41,8 +41,8 @@
     <div class="trending-wrapper">
         <h3>Trending Products</h3>
         @foreach ($products as $item)
-        <div class="">
-            <img class="slider-img" src="{{ $item['gallery']}}">
+        <div class="trending-itm">
+            <img class="trending-img" src="{{ $item['gallery']}}">
             <div class="">
                 <h3>{{$item['name']}}</h3>
                 <p>{{$item['description']}}</p>
