@@ -25,6 +25,16 @@
             height:500px;
             padding-top:100px;
         }
+        .slider-img{
+            height:400px !important;
+            /* width:400px !important; */
+        }
+        .custom-product{
+            height:600px;
+        }
+        .slider-text{
+           color:#3f2e42;
+        }
     </style>
 </body>
 
