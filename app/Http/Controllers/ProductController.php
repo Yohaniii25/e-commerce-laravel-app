@@ -6,6 +6,8 @@ use App\Models\Product;
 
 use Illuminate\Http\Request;
 
+use App\Models\Cart;
+
 class ProductController extends Controller
 {
     function index()
@@ -23,10 +25,19 @@ class ProductController extends Controller
         $data = Product::
         where('name','like', '%'.$request->input('query').'%')
         ->get();
-        return view('search', ['product' => $data]);
+        return view('search', ['products' => $data]);
     }
     function addToCart(Request $request){
-        
-        return "Hello Yohani";
+
+        if($request->session()->has('user')){
+            //when click add to cart button it redirects to cart page
+            $cart = new Cart;
+            $cart->user_id = $request->session()->get('user')['id'];
+            $cart->product_id = $request->product_id;
+            $cart->save();
+        }
+        else{
+            return redirect('/login');
+        }      
     }
 }
