@@ -41,6 +41,7 @@
 
         .trending-img {
             height: 100px;
+            width: 100px;
         }
 
         .trending-itm {
@@ -54,6 +55,11 @@
 
         .detail-img {
             height: 400px;
+        }
+        .cart-list-divider{
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
     </style>
 </body>
