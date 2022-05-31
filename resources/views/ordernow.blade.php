@@ -30,19 +30,20 @@
 
             <!-- form -->
             <div>
-                <form action="" method="">
+                <form action="/orderplace" method="post">
                     @csrf
                     <div class="form-group">
-                        <textarea name="address" placeholder="enter your address" class="form-control"></textarea>
-                    </div>
+                        <textarea name="address" placeholder="Enter your address" class="form-control"></textarea>
+                    </div><br>
                     <div class="form-group">
-                        <label for="pwd">Payment Method</label> <br> <br>
-                        <input type="radio" value="cash" name="payment"> <span>online payment</span> <br> <br>
-                        <input type="radio" value="cash" name="payment"> <span>EMI payment</span> <br><br>
-                        <input type="radio" value="cash" name="payment"> <span>Payment on Delivery</span> <br> <br>
+                        <input type="text" name="payment_method" placeholder="Enter your payment method" class="form-control">
+                        <!-- <label for="pwd">Payment Method</label> <br> <br>
+                        <input type="radio" value="cash" name="payment_method"> <span>online payment</span> <br> <br>
+                        <input type="radio" value="cash" name="payment_method"> <span>EMI payment</span> <br><br>
+                        <input type="radio" value="cash" name="payment_method"> <span>Payment on Delivery</span> <br> <br> -->
 
-                    </div>
-                    <button type="submit" class="btn btn-primary">Order Now</button>
+                    </div><br>
+                    <button type="submit" class="btn btn-success">Order Now</button>
                 </form>
             </div>
             <!-- form -->

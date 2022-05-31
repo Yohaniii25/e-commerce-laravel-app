@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->integer('product_id');
             $table->integer('user_id');
-            $table->integer('status');
-            $table->integer('payment_method');
-            $table->integer('payment_status');
-            $table->integer('address');
+            $table->string('status');
+            $table->string('payment_method');
+            $table->string('payment_status');
+            $table->string('address');
             $table->timestamps();
         });
     }
