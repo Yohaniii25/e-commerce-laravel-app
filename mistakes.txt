@@ -1,0 +1,5 @@
+1. Registration page doesn't work properly.
+2. Ui design has to improve.
+3. Payment method is not working properly.
+4. Images has to change.
+5. Have to add admin dashboard.
