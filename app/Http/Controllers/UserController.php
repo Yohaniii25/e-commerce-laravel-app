@@ -16,6 +16,7 @@ class UserController extends Controller
         // return $user->password;
         if(!$user || !Hash::check($request->password,$user->password)){
             return "Username or password is not matches.";
+            redirect('/home');
         }
         else{
             $request->session()->put('user',$user);
@@ -25,10 +26,10 @@ class UserController extends Controller
 
     function register(Request $request) {
         // return $request->input();
-        $user = new User();
+        $user = new User;
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->password = Hash::make($request->name);
+        $user->password = Hash::make($request->password);
         $user->save();
         return redirect('/login');
 
